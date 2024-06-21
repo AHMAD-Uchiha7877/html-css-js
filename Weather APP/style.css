@@ -1,0 +1,107 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+/* Styling for a card container */
+
+.card {
+  /* Set the width of the card to 90% of its containing element */
+  width: 90%;
+
+  /* Set the maximum width of the card to 470 pixels ... To ensure that the card doesn't become too wide on larger screens, it is capped at a maximum width of 470 pixels.*/
+  max-width: 470px;
+
+  background: linear-gradient(135deg, #00feba, #5b548a);
+
+  color: #fff;
+  margin: 80px auto 0;
+
+  border-radius: 20px;
+  padding: 40 px 35 px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  /* Use flexbox to align items (input and button) horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+/* Styling for the input field in the search container */
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  margin: 30px; /* Adjusted margin for spacing */
+  display: flex;
+  border-radius: 30px;
+  flex: 1; /* Allows the input field to grow and fill available space */
+  margin-left: 15px;
+  font-size: 18px;
+}
+.search button {
+  margin-right: 60px;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.search button img {
+  width: 18px;
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather{
+  display: none;
+}
